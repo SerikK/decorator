@@ -7,17 +7,19 @@ class DataProvider
     private $host;
     private $user;
     private $password;
+    private $cache;
 
     /**
      * @param $host
      * @param $user
      * @param $password
      */
-    public function __construct($host, $user, $password)
+    public function __construct($host, $user, $password, $cache = null)
     {
         $this->host = $host;
         $this->user = $user;
         $this->password = $password;
+        $this->cache = $cache;
     }
     
     /**
