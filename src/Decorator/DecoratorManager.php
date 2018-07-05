@@ -10,18 +10,6 @@ use src\Integration\DataProvider;
 
 class DecoratorManager extends DataProvider
 {
-    /**
-     * @param string $host
-     * @param string $user
-     * @param string $password
-     * @param CacheItemPoolInterface $cache
-     */
-    public function __construct($host, $user, $password, CacheItemPoolInterface $cache)
-    {
-        parent::__construct($host, $user, $password);
-        $this->cache = $cache;
-    }
-
     public function setLogger(LoggerInterface $logger)
     {
         $this->logger = $logger;
