@@ -10,9 +10,6 @@ use src\Integration\DataProvider;
 
 class DecoratorManager extends DataProvider
 {
-    public $cache;
-    public $logger;
-
     /**
      * @param string $host
      * @param string $user
