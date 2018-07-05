@@ -7,7 +7,8 @@ class DataProvider
     private $host;
     private $user;
     private $password;
-    private $cache;
+    public $logger;
+    public $cache;
 
     /**
      * @param $host
